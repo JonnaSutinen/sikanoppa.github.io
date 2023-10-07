@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <form id="player-names-form">
+    <label for="player1">Pelaajan 1 nimi:</label>
+    <input type="text" id="player1" required>
+    <br>
+    <label for="player2">Pelaajan 2 nimi:</label>
+    <input type="text" id="player2" required>
+    <br>
+    <button type="submit">Aloita peli</button>
+  </form>
+
+  <div id="game-container" style="display: none;">
+    <div id="game-content">
+      <div id="player-turn"></div>
+      <div id="dice">
+        <img id="die1" src="img/noppa1.png" alt="Noppa 1">
+        <img id="die2" src="img/noppa1.png" alt="Noppa 2">
+      </div>
+      <button id="roll-button" onclick="rollDice()">Heitä noppia</button>
+      <button id="end-turn-button" onclick="endTurn()">Lopeta vuoro</button>
+      <div id="score"></div>
+    </div>
+    <div id="scoreboard">
+      <h2>Pistetaulukko</h2>
+      <div id="player1-score"></div>
+      <div id="player2-score"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

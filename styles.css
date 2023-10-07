@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#game-content {
+  flex: 1;
+  padding: 20px;
+}
+
+#scoreboard {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+}
+
+#scoreboard h2 {
+  text-align: center;
+  color: #333;
+}
+
+#scoreboard div {
+  margin-top: 10px;
+  color: #333;
+}
+
+#player-names-form {
+  text-align: center;
+}
+
+#player-names-form label, #player-names-form input {
+  display: block;
+  margin: 10px auto;
+  color: #000000;
+}
+
+#player-names-form button {
+  display: block;
+  margin: 10px auto;
+  background-color: #ff69b4; /* Pinkki */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#player-names-form button:hover {
+  background-color: #ff1493; /* Tumma pinkki hover-tilassa */
+}
+
+#dice img {
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  background-color: #ff69b4; /* Pinkki */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493; /* Tumma pinkki hover-tilassa */
+}
